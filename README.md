@@ -25,7 +25,7 @@ Exercise 1 and Exercise 2 don't need two different data models — they're two d
 Since `ventas` stores references instead of copying data, both directions can be answered from the exact same collections, with no change to the schema.
  
 ## Data Model
-![Data Model](./level1-optica/model-optica.png)
+![Data Model](./level1-optica/optica-model.png)
  
 ## MongoDB Script
 File: [`optica.js`](./level1-optica/optica.js)
@@ -57,7 +57,7 @@ This project designs a NoSQL (MongoDB) database for a food delivery website ("Fo
 - `pedidos` reference `clientes` (who ordered), `sucursales` (who fulfills it), and optionally `repartidor` (an `empleados`, only filled in for home-delivery orders, along with `hora_reparto`).
 - `productos` optionally reference `categoriasPizzas`, since categories only apply to pizza-type products and can change name independently of the product itself.
 ## Data Model
-![Data Model](./level2-comida/model-comida.png)
+![Data Model](./level2-comida/comidas-model.png)
  
 ## MongoDB Script
 File: [`comida.js`](./level2-comida/comida.js)
